@@ -14,8 +14,9 @@
 }
 
 button {
+	text-transform: capitalize;
 	width: 270px;
-	height: 50px;
+	height: 80px;
 	border: 2px solid green;
 	border-radius: 30px;
 	/* padding: 10px 10px; */
@@ -25,14 +26,37 @@ button {
 	text-align: center;
 	color: #fff;
 	box-shadow: 0 5px 10px rgba(0, 0, 0);
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	/* outline: none; */
 }
 
 .check-box {
 	width: 80px;
-	height: 50px;
-	border: 40px;
+	height: 80px;
+	border-radius: 30px;
 	box-shadow: 0 5px 10px rgba(0, 0, 0);
 	position: absolute;
 	top: 0;
 	right: 0;
+	/* background: red; */
+	opacity: 0;
+}
+.check-box svg {
+	width: 40px;
+	margin: 20px;
+}
+
+svg path {
+	stroke-width: 3;
+	stroke: #fff;
+	stroke-dasharray: 35;
+	stroke-dashoffset: 35;
+	stroke-linecap: round;
+}
+.active {
+	background: #f21d05;
+	border: 2px solid #f21d05;
+	transition: 1.5s;
 }
